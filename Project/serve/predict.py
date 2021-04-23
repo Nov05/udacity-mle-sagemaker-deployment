@@ -75,7 +75,7 @@ def predict_fn(input_data, model):
     #         data_len - The length of the review
     words = review_to_words(input_data) # type of input_data: <class 'str'>
     data_X, data_len = convert_and_pad(model.word_dict, words)
-    # End fo TODO
+    # End of TODO
 
     # Using data_X and data_len we construct an appropriate input tensor. Remember
     # that our model expects input data of the form 'len, review[500]'.
@@ -92,6 +92,6 @@ def predict_fn(input_data, model):
     #       be a numpy array which contains a single integer which is either 1 or 0
     ### type of return of model.forward(data): <class 'torch.Tensor'> tensor(0.8290)
     result = model.forward(data).detach().numpy().round(0) 
-    # End fo TODO 
+    # End of TODO 
     
     return result
