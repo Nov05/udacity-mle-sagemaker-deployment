@@ -11,8 +11,8 @@ import torch.nn as nn
 import torch.optim as optim
 import torch.utils.data
 
+### local functions
 from model import LSTMClassifier
-
 from utils import review_to_words, convert_and_pad
 
 
